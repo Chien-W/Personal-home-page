@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>个人收藏</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/templatemo_style.css">
+    <link rel="icon" href="./picture/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!--End-->
+    <script>
+    fetch('https://v1.hitokoto.cn')
+        .then(function (res){
+        return res.json();
+        })
+        .then(function (data) {
+        var hitokoto = document.getElementById('hitokoto');
+        hitokoto.innerText = data.hitokoto;
+        })
+        .catch(function (err) {
+        console.error(err);
+        })
+    </script>
+
+</head>
+
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<div id="menu-container">
+	<div id="menu-1" class="homepage home-section container">
+		<div class="home-intro text-center">
+			<h2 class="welcome-title animated fadeInLeft">我的收藏<p>My Collection.</p></h2>
+            <div style="border-bottom: 2px solid #46494f;"></div>
+
+<div class="projects-header">
+    <h3 class="animated fadeInRight">散文诗</h3>
+            <h3 class="animated fadeInRight">Classical poetry</h3><br /><br/>
+            <h3 class="animated fadeInLeft">如果你不曾来过</h3>
+            <p class="animated fadeInLeft">如果你不曾来过，我的笑容很灿烂<br />没心没肺的玩着自己喜欢的事<br />
+                不用管时间，也不用管谁的悲欢<br />如果你不曾来过，我的性格很阳光<br/>
+                不会任性的发脾气，也不会彻夜不眠<br/>不用伪装悲伤，也不用故作可怜<br/>
+                我可以在星期天的清晨等一片叶子<br/>遥望十五的月亮勾画山河的峰峦<br/>
+                我的心中塞满了童话的故事<br/>梦乡里我读了一夜的书<br/>
+                可是后来清晨的叶子总早一步落下<br/>十五的月亮总是不够圆<br/>
+                梦成了你的专属，我总是强制闭眼<br/>去年，我在陌生的城市盯着一个身影<br/>
+                凝望了许久，也不敢叫一声亲爱的<br/>要不是你，我的情感怎么渲染<br/>
+                要是你，也不知如何做才不手忙脚乱<br/>你消失在人群，我才敢挥手<br/>
+                我笑的可甜，只是一阵酸涩<br/>将曾经的你，轻轻从心里拿出来安放<br/>
+                我其实在等，明知等不到<br/>可过剩的爱，剩了一辈子的余量<br/>
+                我又怎能向别人开仓，那是你一个人的田<br/>无论丰产还是秋荒，只属于你的清扬<br/>
+                如果你不曾来过，我的生命一片荒芜<br/>单调色从不斑斓，瘦弱的黑白线从不宽阔<br/>
+                也不会有极致的喜悦，看一眼照片都心花怒放<br/>如果你不曾来过，我的希望一片空白<br/>
+                听不出情歌的滋味，体会不出泪水咸淡的忧伤<br/>也不会记得拥抱，想融化在你的身旁<br/>
+                光明路和芒山路我终于记住了<br/>等你的每一天，我走过好几遍<br/>
+                如果有下次，我认路了<br/>不用你送我，我送你，陪着才能走完<br/>
+                快到第一次相遇的时间了<br/>我就在原地，怎样我都不怪你<br/>
+                我习惯了等你的出现<br/>来，不来，过去和现在都不是我的终点<br/>
+                我将你存进银河，满目星辉都是你<br/>我将你揉进风尘，四季轮换都相遇
+            </p>
+        </div>
+        <div class="projects-holder">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 p-1 animated umScaleIn">
+                    <div class="project-item">
+                        <img src="picture/1.jpg" alt="">
+                        <div class="overlay">
+                            <h4><a href="#" class="tooltip-test" data-toggle="tooltip" >诗</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 p-2 animated umScaleIn">
+                    <div class="project-item">
+                        <img src="picture/2.jpg" alt="">
+                        <div class="overlay">
+                            <h4><a href="#" class="tooltip-test" data-toggle="tooltip">入</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 p-3 animated umScaleIn">
+                    <div class="project-item">
+                        <img src="picture/3.jpg" alt="">
+                        <div class="overlay">
+                            <h4><a href="#" class="tooltip-test" data-toggle="tooltip" >心</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 p-4 animated umScaleIn">
+                    <div class="project-item animated umScaleIn">
+                        <img src="picture/4.jpg" alt="">
+                        <div class="overlay">
+                            <h4><a href="#" class="tooltip-test" data-toggle="tooltip">梦</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="project-item p-5 animated umScaleIn">
+                        <img src="picture/5.jpg" alt="">
+                        <div class="overlay">
+                            <h4><a href="#" class="tooltip-test" data-toggle="tooltip">想</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="project-item p-6 animated umScaleIn">
+                        <img src="picture/6.jpg" alt="">
+                        <div class="overlay">
+                            <h4><a href="#" class="tooltip-test" data-toggle="tooltip">前</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="project-item p-7 animated umScaleIn">
+                        <img src="picture/7.jpg" alt="">
+                        <div class="overlay">
+                            <h4><a href="#" class="tooltip-test" data-toggle="tooltip">行</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="border-bottom: 2px solid #46494f;"></div> <br />
+        <footer>
+<div class="blog-header text-center">
+	<div class="row">
+		<div class="col-md-12 copyright">
+            <p><a href="../index.html">回到首页</a></p>
+			<p>Copyright &copy; 2020&nbsp;&nbsp;Company By&nbsp;&nbsp;<a href="https://www.oyyandwjw.xyz/">Chien_W</a>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+		</div>
+	</div>
+</div>
+</footer>
+<!-- templatemo 421 raleway -->
+<span class="border-top"></span>
+<span class="border-left"></span>
+<span class="border-right"></span>
+<span class="border-bottom"></span>
+    <!-- 网易云音乐 -->
+    <embed frameborder="no" border="0" marginwidth="0" marginheight="0" width=0 height=0 src="//music.163.com/outchain/player?type=0&id=4950890732&auto=1&height=0"></embed>
+</body>
+</html>

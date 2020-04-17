@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>个人成绩</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/templatemo_style.css">
+    <link rel="icon" href="./picture/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!--End-->
+    <script>
+    fetch('https://v1.hitokoto.cn')
+        .then(function (res){
+        return res.json();
+        })
+        .then(function (data) {
+        var hitokoto = document.getElementById('hitokoto');
+        hitokoto.innerText = data.hitokoto;
+        })
+        .catch(function (err) {
+        console.error(err);
+        })
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        table, tr, td, th {
+            text-align: center;
+            border: 1px solid gray;
+            border-collapse: collapse;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        tr:nth-child(2n) {
+            background-color: rgba(88, 73, 65, 0.18);
+        }
+
+        tr:hover {
+            background-color: rgb(255, 235, 149);
+        }
+
+        #tt {
+            text-align: right;
+            padding-right: 20px;
+        }
+
+
+    </style>
+</head>
+
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+
+<!--这里是上方的留白，万一以后想加个导航什么的呢。。。。-->
+<header class="site-header container animated fadeInDown">
+	<div class="header-wrapper"></div>
+    <div><h4><a href="../index.html">首页</a></h4></div>
+    <div>
+        <p class="power">© 2020 Powered By
+            <a href="https://www.oyyandwjw.xyz/" target="_blank"> Chien_W </a>
+        </p>
+    </div>
+</header>
+<div id="menu-container">
+            <div>
+                <table>
+                    <h3>2018级计算机科学成绩信息表</h3>
+                    <table>
+                        <tr>
+                            <th>学号</th>
+                            <th>姓名</th>
+                            <th>专业</th>
+                            <th>成绩</th>
+                        </tr>
+                        <tr>
+                            <td>1855010201</td>
+                            <td>张三</td>
+                            <td>计算机科学与技术</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>1855010202</td>
+                            <td>张三</td>
+                            <td>计算机科学与技术</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>1855010203</td>
+                            <td>张三</td>
+                            <td>计算机科学与技术</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>1855010204</td>
+                            <td>张三</td>
+                            <td>计算机科学与技术</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>1855010205</td>
+                            <td>张三</td>
+                            <td>计算机科学与技术</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>1855010206</td>
+                            <td>张三</td>
+                            <td>计算机科学与技术</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>1855010207</td>
+                            <td>张三</td>
+                            <td>计算机科学与技术</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>1855010208</td>
+                            <td>张三</td>
+                            <td>计算机科学与技术</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>1855010209</td>
+                            <td>张三</td>
+                            <td>计算机科学与技术</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>1855010210</td>
+                            <td>张三</td>
+                            <td>计算机科学与技术</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td id="tt" colspan="5">总计：10人，平均分：100</td>
+                        </tr>
+                    </table>
+                </table>
+            </div>
+</div>
+
+<!-- templatemo 421 raleway -->
+<span class="border-top"></span>
+<span class="border-left"></span>
+<span class="border-right"></span>
+<span class="border-bottom"></span>
+    <!-- 网易云音乐 -->
+    <embed frameborder="no" border="0" marginwidth="0" marginheight="0" width=0 height=0 src="//music.163.com/outchain/player?type=0&id=4950890732&auto=1&height=0"></embed>
+</body>
+</html>
