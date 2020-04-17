@@ -1,8 +1,8 @@
 # **前言**
 
 https://github.com/dmego/home.github.io home.github.io<br/>
-https://github.com/Dreamer-Paul/Resume 一个简洁的橙色调个人简介 
-https://github.com/CitronsBlog/Introduced Introduced
+https://github.com/Dreamer-Paul/Resume 一个简洁的橙色调个人简介 <br/>
+https://github.com/CitronsBlog/Introduced Introduced<br/>
 
 <font color=red face="微软雅黑">感谢上述大佬的开源代码。（我不生产代码，我只是代码的搬运工emmm）</font>
 
