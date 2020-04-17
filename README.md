@@ -1,6 +1,6 @@
 # **前言**
 
-https://github.com/dmego/home.github.io home.github.io	
+https://github.com/dmego/home.github.io home.github.io<br/>
 https://github.com/Dreamer-Paul/Resume 一个简洁的橙色调个人简介 
 https://github.com/CitronsBlog/Introduced Introduced
 
