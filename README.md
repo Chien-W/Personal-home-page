@@ -6,9 +6,9 @@ https://github.com/CitronsBlog/Introduced Introduced<br/>
 
 <font color=red face="微软雅黑">感谢上述大佬的开源代码。（我不生产代码，我只是代码的搬运工emmm）</font>
 
-<a href="https://www.oyyandwjw.xyz/Internet-text/实训四/index.html" target="_blank">项目演示</a><---点这里<br/>
+<a href="https://sx4.oyyandwjw.cn/" target="_blank">项目演示</a><---点这里<br/>
 
-[个人博客](https://www.oyyandwjw.xyz)<---点这里
+[个人博客](https://www.oyyandwjw.cn)<---点这里
 
 本项目主要为实训。
 
