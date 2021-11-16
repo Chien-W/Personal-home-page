@@ -48,9 +48,10 @@ $(document).ready(function () {
 	 * 获取Bing壁纸
 	 * 原先 YQL 已经无法提供服务了
 	 * 改用 JsonBird：https://bird.ioliu.cn/
+	 * 改用 JsoBird已经失效，换用github博主开放的端口：https://realwds-api.vercel.app/bing
 	 * 
 	 */
-	var url = 'https://bird.ioliu.cn/v1/?url=https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=8';
+	var url = 'https://realwds-api.vercel.app/bing?count=8';
 	var imgUrls = JSON.parse(sessionStorage.getItem("imgUrls"));
 	var index = sessionStorage.getItem("index");
 	var $panel = $('#panel');
@@ -58,7 +59,9 @@ $(document).ready(function () {
 		imgUrls = new Array();
 		index = 0;		
 		$.get(url,function (result) {
-			images = result.images;
+			images = result.data.images;
+			console.log("数据为：");
+			console.log(images);
 			for (let i = 0; i < images.length; i++) {
 				const item = images[i];
 				imgUrls.push(item.url);
